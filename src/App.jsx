@@ -80,16 +80,7 @@ function TicketPage() {
           {totalTickets !== 1 ? "s" : ""}
         </p>
 
-        <Button
-          disabled={totalTickets === 0}
-          className={`w-full sm:w-auto ${
-            totalTickets > 0
-              ? "bg-green-600 text-white hover:bg-green-700"
-              : "bg-gray-400 text-white cursor-not-allowed"
-          }`}
-        >
-          Proceed
-        </Button>
+        <Button disabled={totalTickets === 0} onClick={() => window.location.href = "https://razorpay.me/@bhoomikramanikbhaisorathiya" } className={`w-full sm:w-auto ${ totalTickets > 0 ? "bg-green-600 text-white hover:bg-green-700" : "bg-gray-400 text-white cursor-not-allowed" }`} > Proceed </Button>
       </div>
     </Layout>
   );

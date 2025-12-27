@@ -75,13 +75,13 @@ const Header = () => {
       {mobileMenuOpen && (
         <div className="md:hidden bg-white border-t">
           <nav className="flex flex-col space-y-4 px-4 py-4">
-            <Link to="/FanPitStanding" className="text-sm text-gray-700 hover:text-gray-900">
+            <Link to="/TicketBooking" className="text-sm text-gray-700 hover:text-gray-900">
               Fan Pit Standing
             </Link>
-            <Link to="/PlatinumSeating" className="text-sm text-gray-700 hover:text-gray-900">
+            <Link to="/TicketBooking" className="text-sm text-gray-700 hover:text-gray-900">
               Platinum Seating
             </Link>
-            <Link to="/GeneralStanding" className="text-sm text-gray-700 hover:text-gray-900">
+            <Link to="/TicketBooking" className="text-sm text-gray-700 hover:text-gray-900">
               General Standing
             </Link>
             <button className="flex items-center text-sm text-gray-700">
