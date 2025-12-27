@@ -27,13 +27,13 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            <Link to="/FanPitStanding" className="text-sm text-gray-700 hover:text-gray-900">
+            <Link to="/TicketBooking" className="text-sm text-gray-700 hover:text-gray-900">
               Fan Pit Standing
             </Link>
-            <Link to="/PlatinumSeating" className="text-sm text-gray-700 hover:text-gray-900">
+            <Link to="/TicketBooking" className="text-sm text-gray-700 hover:text-gray-900">
               Platinum Seating
             </Link>
-            <Link to="/GeneralStanding" className="text-sm text-gray-700 hover:text-gray-900">
+            <Link to="/TicketBooking" className="text-sm text-gray-700 hover:text-gray-900">
               General Standing
             </Link>
             <button className="flex items-center text-sm text-gray-700 hover:text-gray-900">

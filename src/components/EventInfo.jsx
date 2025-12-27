@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Star, Heart, Share2, Calendar, Clock, MapPin } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const EventInfo = () => {
 
@@ -33,7 +34,7 @@ const EventInfo = () => {
     "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800"
   ]
 };
-
+  const navigate = useNavigate();
   const [liked, setLiked] = useState(false);
 
   if (!eventData) {
@@ -192,9 +193,14 @@ const EventInfo = () => {
                   <div className="text-sm text-green-600 font-medium">onwards</div>
                 </div>
 
-                <button className="w-full bg-pink-600 text-white py-3 rounded-lg font-semibold hover:bg-pink-700 transition mb-3">
+                {/* <button className="w-full bg-pink-600 text-white py-3 rounded-lg font-semibold hover:bg-pink-700 transition mb-3">
                   Book Now
-                </button>
+                </button> */}
+                <button onClick={() => navigate("/TicketBooking")}
+      className="w-full bg-pink-600 text-white py-3 rounded-lg font-semibold hover:bg-pink-700 transition mb-3"
+    >
+      Book Now
+    </button>
 
                 <div className="text-center text-xs text-gray-500">
                   Limited seats available
